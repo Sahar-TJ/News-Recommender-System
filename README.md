@@ -9,16 +9,22 @@ __Dataset:__ We utilize the AG News dataset from Kaggle, which offers a diverse 
 
 __The workflow of our system is as follows:__
 
-__User Query:__ The user inputs a query, such as "I want to know about Intelligence", "Tell me about the Prime Minister", "Currency", etc.
-__Article Recommendation:__ Using cosine similarity and TF-IDF vectorization, the system retrieves the top five news articles related to the query.
-__Article Classification:__ Each recommended article is classified into one of the predefined categories using a fine-tuned BERT model from Hugging Face.
-__Keyword Extraction:__ For each article, key terms are extracted using traditional NLP techniques to provide a quick overview of the content.
-__Summarization:__ A concise summary of each article is generated using the DistilBART model, allowing users to grasp the essential information quickly.
+- __User Query:__ The user inputs a query, such as "I want to know about Intelligence", "Tell me about the Prime Minister", "Currency", etc.
+
+- __Article Recommendation:__ Using cosine similarity and TF-IDF vectorization, the system retrieves the top five news articles related to the query.
+
+- __Article Classification:__ Each recommended article is classified into one of the predefined categories using a fine-tuned BERT model from Hugging Face.
+
+- __Keyword Extraction:__ For each article, key terms are extracted using traditional NLP techniques to provide a quick overview of the content.
+
+- __Summarization:__ A concise summary of each article is generated using the DistilBART model, allowing users to grasp the essential information quickly.
+
 
 __Furthermore, we evaluate the performance of our system using various metrics:__
 
-__Classification Performance:__ Accuracy, precision, recall, and F1-score are used to assess the effectiveness of the article classification.
-__Summarization Performance:__ The BLEU score is utilized to evaluate the quality of the generated summaries against the original article descriptions.
+- __Classification Performance:__ Accuracy, precision, recall, and F1-score are used to assess the effectiveness of the article classification.
+
+- __Summarization Performance:__ The BLEU score is utilized to evaluate the quality of the generated summaries against the original article descriptions.
 By integrating these advanced NLP techniques, our News Recommender System aims to provide users with an efficient and personalized news consumption experience, ensuring they receive the most relevant and high-quality information.
 
 
