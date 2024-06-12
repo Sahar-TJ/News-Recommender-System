@@ -17,7 +17,7 @@ import string
 import os
 
 
-st.write("## News Recommender System")
+st.write("## Personalized News at Your Fingertips")
 
 
 # Download NLTK data
@@ -31,7 +31,7 @@ nltk.data.path.append(os.path.join(os.path.expanduser("~"), "nltk_data"))
 # Load dataset
 @st.cache_data
 def load_data():
-    combined_df = pd.read_csv('train.csv')
+    combined_df = pd.read_csv('dataset.csv')
     combined_df = combined_df[~combined_df['Description'].str.contains('&lt;strong&gt;', na=False)]
     combined_df['content'] = combined_df['Title'] + ' ' + combined_df['Description']
     combined_df['Class Index'] = combined_df['Class Index'].astype(int) - 1
