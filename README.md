@@ -86,7 +86,7 @@ _Note: Some code blocks requires the user to enter queries._
 
 ---
 
-### Steps to Run App File 'app2.py'
+### Steps to Run App File `app2.py`
 
 1. Set Up Environment
 - Ensure Python is installed on your system.
